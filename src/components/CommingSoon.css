@@ -1,0 +1,30 @@
+.App-body {
+  height: 100%;
+  margin: 0;
+  background: #adadb1 0% 0% no-repeat padding-box;
+}
+
+.bgimg {
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.text-comming {
+  text-align: center;
+  font: Medium 36px/55px Poppins;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+}
+
+/* .coming-soon-img {
+  margin: 5% 25%;
+} */
+
+/* Mobile */
+
+@media (max-width: 375px) {
+  .coming-soon-img {
+    margin: 5% -8%;
+  }
+}
