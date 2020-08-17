@@ -14,7 +14,7 @@ const NavBar = (props) => {
             />
           </div>
         </Link>
-        <li>Two Player</li>
+        <li>Two Player Games</li>
       </ul>
     </nav>
   );

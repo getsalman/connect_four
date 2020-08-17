@@ -26,7 +26,7 @@ const TwoPlayers = (props) => {
         data={props.data}
         name={name}
       ></Modal>
-      <div className="box">
+      <div className="container">
         <div className="gamecard">
           <div type="button" className="player1">
             <div className="player-image">

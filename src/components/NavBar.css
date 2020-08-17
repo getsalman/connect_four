@@ -2,25 +2,6 @@ nav {
   font-size: 1.5rem;
   background: rgb(255, 255, 255);
 
-  /* background: hsla(186, 33%, 94%, 1); */
-  /* background: linear-gradient(
-    90deg,
-    hsla(186, 33%, 94%, 1) 0%,
-    hsla(216, 41%, 79%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(186, 33%, 94%, 1) 0%,
-    hsla(216, 41%, 79%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(186, 33%, 94%, 1) 0%,
-    hsla(216, 41%, 79%, 1) 100%
-  ); */
-
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
@@ -40,16 +21,11 @@ nav ul li {
   flex: auto;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  height: 39px;
+  height: 60px;
   letter-spacing: 0px;
   color: #424242;
   opacity: 1;
 }
-
-/* nav ul li:hover {
-  background-color: #555555;
-  color: white;
-} */
 
 .arrow {
   float: left;
@@ -57,6 +33,30 @@ nav ul li {
   height: 24px;
   opacity: 1;
 }
+
+/* background: hsla(186, 33%, 94%, 1); */
+/* background: linear-gradient(
+90deg,
+hsla(186, 33%, 94%, 1) 0%,
+hsla(216, 41%, 79%, 1) 100%
+);
+
+background: -moz-linear-gradient(
+90deg,
+hsla(186, 33%, 94%, 1) 0%,
+hsla(216, 41%, 79%, 1) 100%
+);
+
+background: -webkit-linear-gradient(
+90deg,
+hsla(186, 33%, 94%, 1) 0%,
+hsla(216, 41%, 79%, 1) 100%
+); */
+
+/* nav ul li:hover {
+background-color: #555555;
+color: white;
+} */
 
 @media all and (max-width: 375px) and (min-width: 0px) {
   nav ul {

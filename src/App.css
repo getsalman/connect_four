@@ -1,3 +1,15 @@
+body {
+  background-color: #ced2dc;
+}
+
+.botton-year {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  color: #424242;
+  opacity: 1;
+}
+
 .button {
   background-color: #5689db;
   border: 1px solid #5689db;
@@ -14,9 +26,9 @@
 }
 
 .hrr {
-  margin: 58px 20px 10px 39px;
-  width: 420px;
-  border-width: thin;
+  margin: 135px 20px 10px 9px;
+  width: 95%;
+  border-width: 2px;
 }
 
 .tournament-text {
@@ -57,6 +69,8 @@ button:hover {
   border-radius: 30px;
   border: 0px solid rgb(24, 149, 190);
   background: rgb(255, 255, 255);
+
+  border: 2px solid var(--unnamed-color-ffffff);
 }
 
 .Hole div {
@@ -100,39 +114,9 @@ button:hover {
   font-size: 14pt;
 }
 
-.main {
-  width: 100%;
-  height: 130vh;
-  background: #b4afbdb0;
-  opacity: 1;
-}
-
-.App {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', 'sans-serif';
-}
-.box {
-  margin: 0px 0px 0px 0px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
-  opacity: 1;
-  border: 10px 10px 10px 10px;
-}
-
 .home-image {
-  margin: -200px 0px 0px 250px;
+  margin: -146px 0px 0px 248px;
   width: 70%;
-  height: 80%;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: transparent 0% 0% no-repeat padding-box;
-  opacity: 1;
-  z-index: 2;
 }
 
 .circle-right {
@@ -147,7 +131,7 @@ button:hover {
 .circle-top {
   width: 100px;
   height: 100px;
-  margin: -320px 0px 0px 220px;
+  margin: 0px 0px 0px 0px;
   border: 30px solid #e6ffe9;
   border-radius: 50%;
   opacity: 0.3;
@@ -155,33 +139,32 @@ button:hover {
 }
 
 .connect-four {
-  margin: 50px 0px 0px 50px;
-  text-align: left;
-  font-family: Poppins, sans-serif;
-  font-size: 20px;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1rem;
   letter-spacing: 0px;
   color: #3d4276;
   text-transform: uppercase;
-  opacity: 1;
+  margin-left: -30%;
 }
 .connect-four-text {
-  margin: 0px 0px 0px 50px;
-  text-align: left;
-  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-family: sans-serif;
   font-size: 14px;
   letter-spacing: 0px;
-  color: black;
+  color: #949494;
   opacity: 1;
+  margin-left: -30%;
 }
 
 .playbutton {
   width: 100px;
-  margin: 150px 0px 0px 90px;
-  height: 100px;
+  margin: -193px 0px 0px 85px;
   background: #ff7243;
   box-shadow: 10px 10px 50px #ee400773;
   border-radius: 15px;
-  /* opacity: 1; */
+  padding: 15px;
+  border: 0px;
 }
 
 .playbutton-inner {
@@ -190,56 +173,59 @@ button:hover {
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
 .playbutton-image {
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: transparent 0% 0% no-repeat padding-box;
-  opacity: 1;
+  margin-left: 14px;
+  background: var(--unnamed-color-ffffff);
 }
+
 .play-text {
   text-align: center;
-  font: Medium 22px/33px Poppins;
-  letter-spacing: 4.4px;
+  font-size: 1rem;
+  margin-left: 10px;
+  letter-spacing: 5px;
   color: #424242;
-  opacity: 1;
 }
 
 .custom-game {
-  margin: 20px 0px 0px 20px;
-  width: 270px;
+  margin: 10px 0px 0px 40px;
+  width: 230px;
   height: 60px;
   background: #4babff 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   text-align: center;
+  border: 0px;
 }
 .two-players-game {
   margin: 20px 0px 0px 20px;
-  width: 270px;
+  width: 230px;
   height: 60px;
   background: #4b7bff 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   text-align: center;
+  border: 0px;
 }
 
 .online-game {
-  margin: 20px 0px 0px 20px;
-  width: 270px;
+  margin: 20px 0px 0px 40px;
+  width: 230px;
   height: 60px;
   background: #4b4bff 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
   text-align: center;
+  border: 0px;
 }
 
 .training-game {
   margin: 20px 0px 0px 20px;
-  width: 270px;
+  width: 230px;
   height: 60px;
-  background: #6e4bff 0% 0% no-repeat padding-box;
+  background: #6e4bff;
   border-radius: 10px;
-  opacity: 1;
-  text-align: center;
+  border: 0px;
 }
 
 .custom-game-inner {
@@ -251,65 +237,53 @@ button:hover {
 }
 
 .custom-game-image {
-  background-image: url('./img/user.png');
+  background-image: url("./img/user.png");
   background-position: left;
   background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
 .custom-game-text {
-  text-align: left;
-  color: var(--unnamed-color-ffffff);
-  font: Medium 2px/3px Poppins;
-  font-size: 22px;
-  letter-spacing: 0px;
+  font-size: 18px;
   color: #ffffff;
-  opacity: 1;
-  margin-left: -30px;
+  margin-left: -25px;
+  margin-top: 10px;
 }
 
 .card {
-  margin-top: 20px;
+  margin: auto;
   width: 600px;
-  height: 530px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2%;
+  box-shadow: 0px 3px 10px #00000029;
+}
+
+.card-2 {
+  margin: auto;
+  width: 600px;
+
   background: rgb(255, 255, 255);
   border-radius: 20px;
-  /* background: hsla(298, 68%, 90%, 1); */
-
-  /* background: linear-gradient(
-    90deg,
-    hsla(298, 68%, 90%, 1) 0%,
-    hsla(30, 82%, 91%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(298, 68%, 90%, 1) 0%,
-    hsla(30, 82%, 91%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(298, 68%, 90%, 1) 0%,
-    hsla(30, 82%, 91%, 1) 100%
-  ); */
-
-  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6D5F7", endColorstr="#FBE9D7", GradientType=1 ); */
-  /* box-shadow: 0px 3px 10px #00000029;
-  border: 1px solid #f7f7f7;
-  border-radius: 30px;
-  opacity: 1; */
+  padding-bottom: 50px;
+  background-color: #eeeeee;
 }
+
 .gamecard {
-  margin: 150px 0px 100px 100px;
-  width: 500px;
-  height: 570px;
+  display: grid;
+  /* flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: center; */
+  margin: 25px 0px 0px 310px;
+  width: 47%;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 10px #00000029;
   border: 1px solid #f7f7f7;
-  border-radius: 20px;
-  opacity: 1;
+  border-radius: 15px;
+  /* padding: 1%; */
 }
 
 .boardgame {
@@ -364,22 +338,51 @@ button:hover {
 }
 
 .playerLabel {
-  margin: 10px 0px 0px 40px;
-  font-size: 24px;
+  margin: 124px 0px 0px -80px;
+  font-size: 15px;
   font-family: fantasy;
 }
 
 .player1 {
-  margin: 40px 10px -35px 40px;
-  width: 80%;
-  height: 70px;
+  margin: 55px 0px 0px 62px;
+  width: 75%;
+
   background: #dcf6e4 0% 0% no-repeat padding-box;
   border: 1px solid #70707026;
-  border-radius: 15px;
-  opacity: 1;
+  border-radius: 10px;
   display: grid;
+  /* display: flex;
+  align-items: center; */
+}
 
-  padding: 10px;
+.player2 {
+  margin: 45px 0px -52px 2px;
+  width: 95%;
+
+  background: #dcf6e4 0% 0% no-repeat padding-box;
+  border: 1px solid #70707026;
+  border-radius: 10px;
+  display: grid;
+}
+
+.numbers-of-games {
+  margin: 45px 0px -52px 2px;
+  width: 95%;
+
+  background: #dcf6e4 0% 0% no-repeat padding-box;
+  border: 1px solid #70707026;
+  border-radius: 10px;
+  display: grid;
+}
+
+.whostart {
+  margin: 45px 0px -52px 2px;
+  width: 95%;
+
+  background: #dcf6e4 0% 0% no-repeat padding-box;
+  border: 1px solid #70707026;
+  border-radius: 10px;
+  display: grid;
 }
 
 .boardlabel {
@@ -394,22 +397,29 @@ button:hover {
 
   padding: 10px;
 }
+
 .player-image {
-  margin: -8px 0px 15px 0px;
   background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
-  border: 12px solid #37ac5d;
-  opacity: 1;
+  border: 10px solid #37ac5d;
+  border-radius: 60%;
+  width: 58%;
+  margin-left: 6px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+/* .player-imagee {
+  background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
+  border: 10px solid #F8D146;
   border-radius: 50%;
   width: 63px;
   height: 52px;
+} */
 
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 1;
-}
 .player-input {
-  height: 30px;
+  /* height: 30px;
   width: 150px;
-  text-align: center;
+  text-align: center; */
   font-size: 24px;
   font-family: fantasy;
   letter-spacing: 0px;
@@ -419,13 +429,13 @@ button:hover {
 }
 
 .player-text {
-  margin: 10px 10px 10px 10px;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0px;
   color: #424242;
   opacity: 0.56;
+  margin-top: 8px;
+  margin-left: -20px;
 }
 
 .grid-container {
@@ -437,13 +447,13 @@ button:hover {
 }
 
 .submit {
-  margin: 20px 0px 10px 40px;
-  width: 420px;
+  margin: 15px 0px 10px 20px;
+  width: 90%;
   height: 60px;
   color: white;
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background: #4b7bff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #70707026;
@@ -487,8 +497,8 @@ hr {
   border-width: thin;
 }
 .inputHr {
-  margin: 0px 10px 10px 0px;
-  width: 300px;
+  margin: -44px 0px 0px 299px;
+  width: 120%;
   border-width: thin;
 }
 .modalhr {
@@ -539,7 +549,7 @@ h1 {
 }
 
 /* The container */
-.container {
+/* .container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -550,14 +560,14 @@ h1 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* Hide the browser's default radio button */
-.container input {
+/* .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-}
+} */
 
 /* Create a custom radio button */
 .checkmark {
@@ -571,36 +581,36 @@ h1 {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+/* .container:hover input ~ .checkmark {
   background-color: #ccc;
-}
+} */
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+/* .container input:checked ~ .checkmark {
   background-color: #2196f3;
-}
+} */
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+/* .container input:checked ~ .checkmark:after {
   display: block;
-}
+} */
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+/* .container .checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: white;
-}
+} */
 
 .input-box {
   margin-top: 05px;
@@ -620,9 +630,10 @@ h1 {
   opacity: 1;
 }
 
-.containerour {
+/* .containerour {
   padding: 2px 16px;
-}
+} */
+
 .input-box-text {
   padding: 10px;
   letter-spacing: 0px;
@@ -768,7 +779,7 @@ h1 {
   .connect-four {
     margin: 50px 0px 0px 200px;
     text-align: left;
-    font-family: Poppins, sans-serif;
+    font-family: sans-serif;
     font-size: 10px;
   }
 
