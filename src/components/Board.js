@@ -336,15 +336,17 @@ class Board extends Component {
           <div className="container">
             <div className="boardcard">
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-8 col-sm-12 col-xs-12">
                   <div className="game ">{slats}</div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 col-sm-12 col-xs-12">
                   <div className="smallpad">
-                    <h2>{this.props.data.numberOfGames} Tournament</h2>
+                    <h2 style={{ fontSize: "1.7rem" }}>
+                      {this.props.data.numberOfGames} Tournament
+                    </h2>
 
                     <div className={winnerMessageStyle}>
-                      <h2 style={{ color: "orange" }}>Congratulations</h2>
+                      <h3 className="congratulations">Congratulations</h3>
                       {this.state.tournametWinner !== ""
                         ? this.state.tournametWinner === "Red"
                           ? this.props.data.player1 + ", You won Tournament "
@@ -353,10 +355,10 @@ class Board extends Component {
                           : this.props.data.player2 + ", You won Tournament "
                         : this.state.winner === "Red"
                         ? this.props.data.player1 +
-                          ", You won game" +
+                          ", You won Game" +
                           (this.state.p1 + this.state.p2)
                         : this.props.data.player2 +
-                          ", You won game" +
+                          ", You won Game" +
                           (this.state.p1 + this.state.p2)}
                     </div>
                     {/* <p
@@ -374,15 +376,18 @@ class Board extends Component {
                         background: "#DCF6E4 0% 0% no-repeat padding-box",
                       }}
                     >
-                      <div>
+                      <div className="player-image">
                         <div
                           className={
-                            this.state.playerTurn === "Blue"
+                            this.state.playerTurn === "Red"
                               ? "player-image activeplayer"
                               : "player-image"
                           }
+                          // this.state.playerTurn === "Red"
+                          // ? "player-image activeplayer"
+                          // : "player-image"
                           style={{
-                            borderColor: "#F8D146",
+                            borderColor: "#FFA200",
                             width: "80px",
                             height: "80px",
                             margin: "8% 6%",

@@ -2,12 +2,24 @@ body {
   background-color: #ced2dc;
 }
 
+.startbtn {
+  border: none;
+  background-color: #4b7bff;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #70707026;
+  border-radius: 20px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 28px;
+}
+
 .carddd {
   background-color: #ffffff;
   margin: 0% 15%;
-  padding: 2% 7%;
+  padding: 4% 12%;
   margin-top: 4%;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #f7f7f7;
 }
@@ -45,6 +57,13 @@ body {
   border-width: 2px;
 }
 
+.congratulations {
+  font-size: 2rem;
+  letter-spacing: 0px;
+  color: #ff6600;
+  opacity: 1;
+}
+
 .tournament-text {
   margin-top: 40px;
   font-size: 20pt;
@@ -53,24 +72,16 @@ body {
   opacity: 1;
 }
 
-button:hover {
+/* button:hover {
   background-color: lightblue;
   font-size: 14pt;
-}
+} */
 
 .Board {
   margin: 40px 40px 40px 40px;
   display: flex;
   float: left;
   width: 50%;
-}
-
-.Slat {
-  margin-top: 40px;
-  margin-left: -4px;
-  background: #84a4fc;
-  border-radius: 30px;
-  opacity: 1;
 }
 
 .Hole {
@@ -200,14 +211,17 @@ button:hover {
 }
 
 .playbutton-image {
-  margin-left: 14px;
-  background: var(--unnamed-color-ffffff);
+  width: 40px;
+  height: 40px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  margin-left: 15px;
+  opacity: 1;
 }
 
 .play-text {
   text-align: center;
   font-size: 1rem;
-  margin-left: 10px;
+  margin-left: 11px;
   letter-spacing: 5px;
   color: #424242;
 }
@@ -417,6 +431,18 @@ button:hover {
   border-radius: 60%;
 }
 
+.girl-circle {
+  background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
+  border: 10px solid #f8d146;
+  border-radius: 60%;
+}
+
+.cup-circle {
+  background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
+  border: 10px solid #b1c4f9;
+  border-radius: 60%;
+}
+
 .player-input {
   font-size: 24px;
   font-family: fantasy;
@@ -470,7 +496,7 @@ button:hover {
   letter-spacing: 0px;
   color: #ffffff;
   margin: 10px 0px 0px 0px;
-  width: 290px;
+  width: 100%;
   height: 60px;
   border: 1px solid #70707026;
   border-radius: 15px;
@@ -482,8 +508,12 @@ button:hover {
   background: #4b7bff 0% 0% no-repeat padding-box;
 }
 .end {
-  background: rgb(255, 255, 255) 0% 0% no-repeat padding-box;
-  color: red;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #cc0000;
+  opacity: 1;
 }
 
 hr {
@@ -524,14 +554,17 @@ h1 {
 }
 
 .modal-main {
-  position: fixed;
-  background: white;
-
+  position: absolute;
+  background: #ffffff;
   height: 500px;
   top: 50%;
   left: 50%;
   border-radius: 20px;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f7f7f7;
+
+  opacity: 1;
 }
 
 .display-block {
@@ -561,21 +594,17 @@ h1 {
 }
 
 .input-box {
-  margin-top: 05px;
-  margin-left: 50px;
-  width: 300px;
+  margin-top: 30px;
+  margin-left: 31px;
+  width: 324px;
   height: 50px;
   background: #eff3ff 0% 0% no-repeat padding-box;
   border: 1px solid #70707026;
   border-radius: 15px;
-  opacity: 1;
 }
 
 .radio-button {
-  margin-top: 10px;
-  width: 20px;
-  height: 20px;
-  opacity: 1;
+  margin-left: 15px;
 }
 
 .input-box-text {
@@ -607,20 +636,12 @@ h1 {
 }
 
 .text {
-  height: 20px;
   text-align: center;
-  font: Medium 36px/55px Poppins;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 0px;
   color: #424242;
   opacity: 1;
-}
-
-.back-button-img {
-  width: 24px;
-  margin-top: 23px;
-  color: #424242;
-  opacity: 1;
+  margin-top: 25px;
 }
 
 .coming-soon-img {
@@ -632,6 +653,22 @@ h1 {
   text-align: center;
 }
 
+.line1 {
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 6;
+}
+
+.player-image {
+  background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
+  border: 10px solid #37ac5d;
+  border-radius: 60%;
+  width: 40%;
+  margin-left: 6px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
 /*page 3 css latest*/
 .boardcard {
   background: #f5f5f5 0% 0% no-repeat padding-box;
@@ -639,6 +676,7 @@ h1 {
   border: 1px solid #f7f7f7;
   border-radius: 30px;
   margin-top: 40px;
+  margin: 40px 75px 0px 75px;
 }
 .game {
   display: flex;
@@ -646,28 +684,33 @@ h1 {
   border: 1px solid #f7f7f7;
   border-radius: 30px;
   background-color: #ffffff;
-  min-height: 70vh;
-  padding: 45px 20px;
+  box-shadow: 0px 3px 6px #00000029;
+  min-height: 46vh;
+  padding: 72px 32px;
 }
+
 .Slat {
   background: #84a4fc;
   border-radius: 50px;
   opacity: 1;
   width: 100%;
 }
+
 .gamecards {
   border: 1px solid #70707026;
   border-radius: 15px;
   margin-bottom: 10px;
 }
+
 .Hole {
   margin: 4px;
-  min-width: 90px;
-  min-height: 90px;
   border-radius: 50%;
   border: 1px solid rgb(24, 149, 190);
   background: rgb(255, 255, 255);
+  width: 70px;
+  height: 70px;
 }
+
 .image {
   position: relative;
   width: 75px;
@@ -687,6 +730,22 @@ h1 {
   padding: 25px 25px 0px 0px;
 }
 
+/* Tablet */
+
+@media (max-width: 768px) {
+  .boardcard {
+    margin: 10px 0px;
+  }
+  .Hole {
+    width: 45px;
+    height: 45px;
+  }
+
+  .game {
+    padding: 141px 14px;
+  }
+}
+
 /* Mobile */
 
 @media (max-width: 375px) {
@@ -694,26 +753,28 @@ h1 {
     padding: 25px 10px 0px 10px;
   }
 
-  .card {
+  /* .card {
     margin: 0px 0px 0px -8px;
     width: 360px;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 2%;
+
     box-shadow: 0px 3px 10px #00000029;
-    height: 670px;
-  }
+    height: 550px;
+  } */
   .card-2 {
     margin: 0px 0px 0px -10px;
     width: 360px;
     background-color: #eeeeee;
     border-radius: 20px;
     padding: 2%;
+    padding-top: 0%;
     box-shadow: 0px 3px 10px #00000029;
     height: 660px;
   }
   .home-image {
-    margin: -100px 0px 0px 130px;
+    margin: -78px 0px 0px 130px;
     width: 70%;
   }
 
@@ -746,31 +807,31 @@ h1 {
   }
 
   .custom-game {
-    margin: 55px 0px 0px 32px;
+    margin: -20px 0px 0px 32px;
     width: 288px;
     height: 60px;
   }
 
   .two-players-game {
-    margin: 20px 0px 0px 31px;
+    margin: 10px 0px 0px 31px;
     width: 288px;
-    height: 60px;
   }
 
   .online-game {
-    margin: 20px 0px 0px 31px;
+    margin: 10px 0px 0px 31px;
     width: 288px;
     height: 60px;
   }
 
   .training-game {
-    margin: 20px 0px 0px 31px;
+    margin: 10px 0px 0px 31px;
     width: 288px;
     height: 60px;
   }
 
   .playbutton {
-    margin: 52px 0px 155px 19px;
+    margin: 52px 0px 210px 19px;
+    padding: 14px;
   }
 
   .connect-four {
@@ -843,8 +904,8 @@ h1 {
   }
 
   .input-box {
-    margin-top: 05px;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 33px;
     width: 230px;
     height: 50px;
     background: #eff3ff 0% 0% no-repeat padding-box;
@@ -913,6 +974,10 @@ h1 {
     padding: 10px;
   }
 
+  .boardcard {
+    margin: 0px;
+  }
+
   .Slat {
     margin: 0px 0px 0px 0px;
   }
@@ -940,14 +1005,16 @@ h1 {
 
   .hrr {
     margin: 58px 20px 10px 39px;
-    width: 290px;
+    width: 100%;
     border-width: thin;
   }
-  hr {
-    margin: 20px 20px 10px 30px;
-    width: 275px;
-    border-width: thin;
+
+  .line1 {
+    width: 100%;
+    margin-top: -42%;
+    margin-bottom: 10%;
   }
+
   .Board {
     padding: 0px 20px;
     margin: 0px;
@@ -973,5 +1040,15 @@ h1 {
     background-color: #ffffff;
     min-height: 0vh;
     padding: 30px 5px;
+  }
+
+  .carddd {
+    background-color: #ffffff;
+    margin: 0% 0%;
+    padding: 2% 7%;
+    margin-top: 4%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f7f7f7;
   }
 }

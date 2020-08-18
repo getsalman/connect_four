@@ -31,19 +31,13 @@ const Home = () => {
               <img
                 className="playbutton-image"
                 src="http://localhost:3000/img/play-button.png"
-                style={{ width: "40px", height: "40px" }}
                 alt="Avatar"
-              ></img>
-
-              <label className="play-text">Play</label>
-            </div>
-            {""}
-
-            <div>
-              <hr
-                style={{ width: "100%", marginTop: "6%", marginBottom: "6%" }}
               />
+              <p className="play-text">Play</p>
             </div>
+
+            <hr className="line1" />
+
             <div>
               <Link to="/comming_soon">
                 <button type="button" className="custom-game">

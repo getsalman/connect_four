@@ -29,10 +29,39 @@ const TwoPlayers = (props) => {
 
       <div className="container">
         <div className="carddd">
-          <div className="flex-container player1">
-            <div className="boy-circle"></div>
-            <div>
-              <p style={{ marginBottom: "0rem" }}>Player 01</p>
+          <div
+            className="flex-container player1"
+            style={{
+              padding: "10px",
+              marginBottom: "10px",
+              borderColor: "1px solid #70707026",
+            }}
+          >
+            <div
+              className="boy-circle"
+              style={{ height: "80px", width: "90px" }}
+            >
+              <img
+                src="http://localhost:3000/img/boy.png"
+                alt="Avatar"
+                style={{
+                  width: "50px",
+                  height: "55px",
+                  margin: "5px 0px 0px 7px",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                padding: "5px 10px 0px 40px",
+                borderBottom: "1px solid #70707026",
+                marginLeft: "-30px",
+                width: "100%",
+              }}
+            >
+              <p style={{ marginBottom: "0rem", color: "#424242" }}>
+                Player 01
+              </p>
 
               <input
                 type="text"
@@ -44,7 +73,156 @@ const TwoPlayers = (props) => {
               />
             </div>
           </div>
-          <hr />
+
+          <div
+            className="flex-container player1"
+            style={{
+              padding: "10px",
+              marginBottom: "10px",
+              backgroundColor: "#F6EFD5",
+              borderColor: "1px solid #70707026",
+            }}
+          >
+            <div
+              className="girl-circle"
+              style={{ height: "80px", width: "90px" }}
+            >
+              <img
+                src="http://localhost:3000/img/girl.png"
+                alt="Avatar"
+                style={{
+                  width: "50px",
+                  height: "55px",
+                  margin: "5px 0px 0px 7px",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                padding: "5px 10px 0px 40px",
+                borderBottom: "1px solid #70707026",
+                marginLeft: "-30px",
+                width: "100%",
+              }}
+            >
+              <p style={{ marginBottom: "0rem", color: "#424242" }}>
+                Player 02
+              </p>
+
+              <input
+                type="text"
+                name="player2"
+                placeholder="player2"
+                className="player-input"
+                value={props.data.player2}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+
+          <div
+            className="flex-container player1"
+            style={{
+              padding: "10px",
+              marginBottom: "10px",
+              backgroundColor: "#EFF3FF",
+              borderColor: "1px solid #70707026",
+            }}
+            onClick={() => {
+              setShow(!show);
+              setName("numberOfGames");
+            }}
+          >
+            <div
+              className="cup-circle"
+              style={{ height: "80px", width: "90px" }}
+            >
+              <img
+                src="http://localhost:3000/img/cup.png"
+                alt="Avatar"
+                style={{
+                  width: "50px",
+                  height: "55px",
+                  margin: "5px 0px 0px 7px",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                padding: "5px 10px 0px 40px",
+                borderBottom: "1px solid #70707026",
+                marginLeft: "-30px",
+                width: "100%",
+              }}
+            >
+              <p
+                style={{
+                  marginBottom: "0rem",
+                  color: "#424242",
+                  fontSize: "18px",
+                }}
+              >
+                Number of game
+              </p>
+              <div style={{ fontSize: "25px" }}>{props.data.numberOfGames}</div>
+            </div>
+          </div>
+
+          <div
+            className="flex-container player1"
+            style={{
+              padding: "10px",
+              marginBottom: "10px",
+              backgroundColor: "#EFF3FF",
+              borderColor: "1px solid #70707026",
+            }}
+            onClick={() => {
+              setShow(!show);
+              setName("whoStarts");
+            }}
+          >
+            <div
+              className="cup-circle"
+              style={{ height: "80px", width: "90px" }}
+            >
+              <img
+                src="http://localhost:3000/img/tour.png"
+                alt="Avatar"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  margin: "8px 0px 0px 7px",
+                }}
+              ></img>
+            </div>
+            <div
+              style={{
+                padding: "5px 10px 0px 40px",
+                borderBottom: "1px solid #70707026",
+                marginLeft: "-30px",
+                width: "100%",
+              }}
+            >
+              <p
+                style={{
+                  marginBottom: "0rem",
+                  color: "#424242",
+                  fontSize: "18px",
+                }}
+              >
+                Who starts
+              </p>
+              <div style={{ fontSize: "25px" }}>{props.data.whoStarts}</div>
+            </div>
+          </div>
+          <hr style={{ width: "100%" }}></hr>
+          <Link to="/tournament">
+            <div>
+              <button type="button" className="submit">
+                Start Game
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
 
