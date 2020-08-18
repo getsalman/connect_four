@@ -17,15 +17,15 @@ const Home = () => {
       <div className="container">
         <div className="card-2">
           <div className="card">
-            {/* <div className="circle-top"></div> */}
-            <div>
+            <div className="circle-top"></div>
+            <div style={{ height: "290px" }}>
               <img
                 className="home-image"
                 src="http://localhost:3000/img/womenandkid.png"
                 alt="Avatar"
               ></img>
             </div>
-            {/* <div className='circle-right'></div> */}
+            <div className="circle-right"></div>
 
             <div className="playbutton">
               <img
@@ -103,7 +103,19 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          {/* <span className="botton-year">@ 2020</span> */}
+          {/* <span
+            style={{
+              color: '#424242',
+              textAlign: 'left',
+              opacity: '1',
+              fontSize: '10px',
+              letterSpacing: '1px',
+              marginLeft: '30px',
+              marginBottom: '10px'
+            }}
+          >
+            © 2020
+          </span> */}
         </div>
       </div>
     </Fragment>

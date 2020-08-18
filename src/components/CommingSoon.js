@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./NavBar";
-import "./CommingSoon";
 
 const CommingSoon = () => {
   return (
@@ -12,7 +11,7 @@ const CommingSoon = () => {
           className="coming-soon-img"
         />
       </div>
-      <h1 className="text-comming">Till then stay tuned!!!!</h1>
+      {/* <h4 className='text-comming'>Till then stay tuned!!!!</h4> */}
     </div>
   );
 };

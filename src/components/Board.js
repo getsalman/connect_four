@@ -211,7 +211,7 @@ class Board extends Component {
     return (
       <div>
         <NavBar page={"/2player"} />
-        {this.state.gameSelected && (
+        {/* {this.state.gameSelected && (
           <div className="main">
             <div className="box">
               <div className="boardgame">
@@ -245,9 +245,9 @@ class Board extends Component {
                       }
                     >
                       <img
-                        src="http://localhost:3000/img/boy.png"
-                        style={{ margin: "-10px 10px 10px 5px" }}
-                        alt="Avatar"
+                        src='http://localhost:3000/img/boy.png'
+                        style={{ marginLeft: '8px',height: '100%' }}
+                        alt='Avatar'
                       ></img>
                     </div>
                     <div className="item4">
@@ -281,9 +281,9 @@ class Board extends Component {
                       style={{ borderColor: "#F8D146" }}
                     >
                       <img
-                        src="http://localhost:3000/img/girl.png"
-                        alt="Avatar"
-                        style={{ margin: "-10px 10px 10px 0px" }}
+                        src='http://localhost:3000/img/girl.png'
+                        alt='Avatar'
+                        style={{ marginLeft: '5px',height: '100%' }}
                       ></img>
                     </div>
                     <div className="item4">
@@ -327,6 +327,160 @@ class Board extends Component {
                       </button>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        )} */}
+        {this.state.gameSelected && (
+          <div className="container">
+            <div className="boardcard">
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="game ">{slats}</div>
+                </div>
+                <div className="col-md-4">
+                  <div className="smallpad">
+                    <h2>{this.props.data.numberOfGames} Tournament</h2>
+
+                    <div className={winnerMessageStyle}>
+                      <h2 style={{ color: "orange" }}>Congratulations</h2>
+                      {this.state.tournametWinner !== ""
+                        ? this.state.tournametWinner === "Red"
+                          ? this.props.data.player1 + ", You won Tournament "
+                          : this.state.tournametWinner === "Tie"
+                          ? "It's Tie"
+                          : this.props.data.player2 + ", You won Tournament "
+                        : this.state.winner === "Red"
+                        ? this.props.data.player1 +
+                          ", You won game" +
+                          (this.state.p1 + this.state.p2)
+                        : this.props.data.player2 +
+                          ", You won game" +
+                          (this.state.p1 + this.state.p2)}
+                    </div>
+                    {/* <p
+                      style={{
+                        textAlign: "center",
+                      }}
+                    >
+                      Playing {this.props.data.numberOfGames}
+                    </p> */}
+
+                    <div
+                      class="gamecards flex-container"
+                      style={{
+                        display: "flex",
+                        background: "#DCF6E4 0% 0% no-repeat padding-box",
+                      }}
+                    >
+                      <div>
+                        <div
+                          className={
+                            this.state.playerTurn === "Blue"
+                              ? "player-image activeplayer"
+                              : "player-image"
+                          }
+                          style={{
+                            borderColor: "#F8D146",
+                            width: "80px",
+                            height: "80px",
+                            margin: "8% 6%",
+                          }}
+                        >
+                          <img
+                            src="http://localhost:3000/img/boy.png"
+                            alt="Avatar"
+                            style={{ marginLeft: "7px", height: "100%" }}
+                          ></img>
+                        </div>
+                      </div>
+                      <div style={{ width: "45%", padding: "15px 20px" }}>
+                        <p>Player 01</p>
+                        <p style={{ marginBottom: "0px" }}>
+                          {this.props.data.player1}
+                        </p>
+                      </div>
+                      <div
+                        className="text-center"
+                        style={{ padding: "15px 20px" }}
+                      >
+                        <p>Score</p>
+                        <p style={{ marginBottom: "0px" }}>{this.state.p1}</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="gamecards flex-container"
+                      style={{
+                        display: "flex",
+                        background: "#F6EFD5 0% 0% no-repeat padding-box",
+                      }}
+                    >
+                      <div>
+                        <div
+                          className={
+                            this.state.playerTurn === "Blue"
+                              ? "player-image activeplayer"
+                              : "player-image"
+                          }
+                          style={{
+                            borderColor: "#F8D146",
+                            width: "80px",
+                            height: "80px",
+                            margin: "8% 6%",
+                          }}
+                        >
+                          <img
+                            src="http://localhost:3000/img/girl.png"
+                            alt="Avatar"
+                            style={{ marginLeft: "5px", height: "100%" }}
+                          ></img>
+                        </div>
+                      </div>
+                      <div style={{ width: "45%", padding: "15px 20px" }}>
+                        <p>Player 01</p>
+                        <p style={{ marginBottom: "0px" }}>
+                          {this.props.data.player2}
+                        </p>
+                      </div>
+                      <div
+                        className="text-center"
+                        style={{ padding: "15px 20px" }}
+                      >
+                        <p>Score</p>
+                        <p style={{ marginBottom: "0px" }}>{this.state.p2}</p>
+                      </div>
+                    </div>
+
+                    <hr></hr>
+                    <Link to="/tournament">
+                      <div>
+                        <button
+                          type="button"
+                          className="bordButton undo"
+                          onClick={this.resetGame}
+                        >
+                          {this.state.winner === ""
+                            ? "Undo Step"
+                            : this.state.complete
+                            ? "Play Again"
+                            : "Next Game"}
+                        </button>
+                      </div>
+                    </Link>
+                    <Link to="/">
+                      <div>
+                        <button
+                          type="button"
+                          className="bordButton end"
+                          onClick={this.resetUser}
+                        >
+                          End Tournament
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
