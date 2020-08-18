@@ -1,5 +1,6 @@
 body {
   background-color: #ced2dc;
+  font-family: "Poppins", Bold sans-serif;
 }
 
 .startbtn {
@@ -16,8 +17,9 @@ body {
 
 .carddd {
   background-color: #ffffff;
-  margin: 0% 15%;
-  padding: 4% 12%;
+  margin: 0% 26%;
+  margin-top: 0%;
+  padding: 4% 4%;
   margin-top: 4%;
   border-radius: 30px;
   box-shadow: 0px 3px 6px #00000029;
@@ -113,12 +115,13 @@ body {
   border-radius: 50%;
   transform: translateY(400px);
 }
-.image {
+/* .image {
   position: relative;
-  width: 50px;
-  height: 50px;
+width: 60px;
+height: 60px;
+border-radius: 53px;
   border-radius: 50px;
-}
+} */
 
 .Blue {
   background-color: #2cc5ff;
@@ -220,10 +223,12 @@ body {
 
 .play-text {
   text-align: center;
-  font-size: 1rem;
   margin-left: 11px;
-  letter-spacing: 5px;
+  letter-spacing: 4.4px;
   color: #424242;
+  opacity: 1;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .custom-game {
@@ -713,17 +718,18 @@ h1 {
 
 .image {
   position: relative;
-  width: 75px;
-  height: 75px;
-  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 53px;
 }
 .Hole div {
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 62px;
+  height: 62px;
   border-radius: 50px;
-  top: -399px;
+  top: -402px;
   transition: transform 0.2s;
+  left: -2px;
 }
 
 .smallpad {

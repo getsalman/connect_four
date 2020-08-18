@@ -28,11 +28,11 @@ const Home = () => {
             <div className="circle-right"></div>
 
             <div className="playbutton">
-              <img
-                className="playbutton-image"
-                src="http://localhost:3000/img/play-button.png"
-                alt="Avatar"
-              />
+              <i
+                class="far fa-play-circle"
+                style={{ color: "white", fontSize: "28px", marginLeft: "21px" }}
+              ></i>
+
               <p className="play-text">Play</p>
             </div>
 
