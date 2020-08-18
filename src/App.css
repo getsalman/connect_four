@@ -143,7 +143,7 @@ border-radius: 53px;
 }
 
 .home-image {
-  margin: -146px 0px 0px 248px;
+  margin: -150px 0px 0px 248px;
   width: 70%;
   position: absolute;
   z-index: 10;
@@ -159,7 +159,7 @@ border-radius: 53px;
   z-index: 1;
   position: absolute;
   float: left;
-  top: 172px;
+  top: 160px;
   left: -239px;
 }
 .circle-top {
@@ -173,7 +173,7 @@ border-radius: 53px;
   position: absolute;
   float: right;
   right: -102px;
-  top: 141px;
+  top: 108px;
   left: 533px;
 }
 
@@ -198,11 +198,11 @@ border-radius: 53px;
 
 .playbutton {
   width: 100px;
-  margin: -193px 0px 0px 85px;
+  margin: -196px 0px 0px 83px;
   background: #ff7243;
   box-shadow: 10px 10px 50px #ee400773;
   border-radius: 15px;
-  padding: 15px;
+  padding: 15px 17px;
   border: 0px;
 }
 
@@ -223,16 +223,16 @@ border-radius: 53px;
 
 .play-text {
   text-align: center;
-  margin-left: 11px;
-  letter-spacing: 4.4px;
+  margin-left: 8px;
+  letter-spacing: 2.4px;
   color: #424242;
   opacity: 1;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .custom-game {
-  margin: 10px 0px 0px 40px;
+  margin: 60px 0px 0px 40px;
   width: 230px;
   height: 60px;
   background: #4babff 0% 0% no-repeat padding-box;
@@ -397,7 +397,7 @@ border-radius: 53px;
   display: grid;
 }
 
-.numbers-of-games {
+/* .numbers-of-games {
   margin: 45px 0px -52px 2px;
   width: 95%;
 
@@ -405,7 +405,7 @@ border-radius: 53px;
   border: 1px solid #70707026;
   border-radius: 10px;
   display: grid;
-}
+} */
 
 .whostart {
   margin: 45px 0px -52px 2px;
@@ -671,7 +671,7 @@ h1 {
   width: 40%;
   margin-left: 6px;
   margin-top: 7px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /*page 3 css latest*/
@@ -750,6 +750,23 @@ h1 {
   .game {
     padding: 141px 14px;
   }
+  .coming-soon-img {
+    margin: 5% 8%;
+  }
+  .player-image {
+    background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
+    border: 10px solid #37ac5d;
+    border-radius: 60%;
+    height: 100px;
+  }
+
+  .gamecard {
+    border: 1px solid #70707026;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 130%;
+    margin-left: -31px;
+  }
 }
 
 /* Mobile */
@@ -759,7 +776,7 @@ h1 {
     padding: 25px 10px 0px 10px;
   }
 
-  /* .card {
+  .card {
     margin: 0px 0px 0px -8px;
     width: 360px;
     background-color: #ffffff;
@@ -768,7 +785,7 @@ h1 {
 
     box-shadow: 0px 3px 10px #00000029;
     height: 550px;
-  } */
+  }
   .card-2 {
     margin: 0px 0px 0px -10px;
     width: 360px;
@@ -861,11 +878,11 @@ h1 {
     height: 570px;
   }
 
-  .player1 {
+  /* .player1 {
     margin: 40px 10px -35px 53px;
     width: 65%;
     height: 62px;
-  }
+  } */
 
   .inputHr {
     margin: 0px 0px 0px 0px;
@@ -1056,5 +1073,9 @@ h1 {
     border-radius: 15px;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #f7f7f7;
+  }
+
+  .coming-soon-img {
+    margin: 16% -8%;
   }
 }

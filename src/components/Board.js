@@ -341,7 +341,7 @@ class Board extends Component {
                 </div>
                 <div className="col-md-4 col-sm-12 col-xs-12">
                   <div className="smallpad">
-                    <h2 style={{ fontSize: "1.7rem" }}>
+                    <h2 style={{ fontSize: "1.5rem" }}>
                       {this.props.data.numberOfGames} Tournament
                     </h2>
 
@@ -390,7 +390,7 @@ class Board extends Component {
                             borderColor: "#FFA200",
                             width: "80px",
                             height: "80px",
-                            margin: "8% 6%",
+                            margin: "0% 0%",
                           }}
                         >
                           <img
