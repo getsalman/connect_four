@@ -8,7 +8,6 @@ const TwoPlayers = (props) => {
   const [name, setName] = useState("whoStarts");
 
   const onChange = (e) => {
-    console.log("==================>", e.target);
     const name = `${e.target.name}`;
     const value = e.target.value;
     props.data[name] = value;

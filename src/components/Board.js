@@ -29,24 +29,6 @@ class Board extends Component {
     this.resetUser = this.resetUser.bind(this);
   }
 
-  // increment() {
-  //   this.setState({
-  //     count: this.state.count + 1,
-  //   });
-  // }
-
-  // decrement() {
-  //   this.setState({
-  //     count: this.state.count + 1,
-  //   });
-  // }
-
-  // resettt() {
-  //   this.setState({
-  //     count: 0,
-  //   });
-  // }
-
   makeMove(slatID) {
     const boardCopy = this.state.boardState.map(function (arr) {
       return arr.slice();

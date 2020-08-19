@@ -1,5 +1,7 @@
 import React from "react";
 
+//Picture added
+
 const Hole = (props) => {
   return (
     <div className="Hole">
