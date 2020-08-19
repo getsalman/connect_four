@@ -17,6 +17,7 @@ class Board extends Component {
       lastTurn: "",
       p1: 0,
       p2: 0,
+      count: 0,
       totalGame: parseInt(
         this.props.data.numberOfGames.slice(
           0,
@@ -27,6 +28,24 @@ class Board extends Component {
     this.resetGame = this.resetGame.bind(this);
     this.resetUser = this.resetUser.bind(this);
   }
+
+  // increment() {
+  //   this.setState({
+  //     count: this.state.count + 1,
+  //   });
+  // }
+
+  // decrement() {
+  //   this.setState({
+  //     count: this.state.count + 1,
+  //   });
+  // }
+
+  // resettt() {
+  //   this.setState({
+  //     count: 0,
+  //   });
+  // }
 
   makeMove(slatID) {
     const boardCopy = this.state.boardState.map(function (arr) {
@@ -199,6 +218,8 @@ class Board extends Component {
       winnerMessageStyle = "winnerMessage";
     }
 
+    console.log("=======>", this.state.playerTurn);
+
     /*Contruct slats allocating column from board*/
     let slats = [...Array(this.state.boardState.length)].map((x, i) => (
       <Slat
@@ -336,12 +357,12 @@ class Board extends Component {
           <div className="container">
             <div className="boardcard">
               <div className="row">
-                <div className="col-md-8 col-sm-12 col-xs-12">
+                <div className="col-lg-8 col-sm-12 col-xs-12">
                   <div className="game ">{slats}</div>
                 </div>
-                <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="col-lg-4 col-sm-12 col-xs-12">
                   <div className="smallpad">
-                    <h2 style={{ fontSize: "1.5rem" }}>
+                    <h2 className="aaaaanumber">
                       {this.props.data.numberOfGames} Tournament
                     </h2>
 
@@ -364,45 +385,54 @@ class Board extends Component {
                     {/* <p
                       style={{
                         textAlign: "center",
+                        marginTop: "-40px",
                       }}
                     >
-                      Playing {this.props.data.numberOfGames}
+                      Playing Game: {this.increment}
                     </p> */}
 
                     <div
                       class="gamecards flex-container"
                       style={{
                         display: "flex",
-                        background: "#DCF6E4 0% 0% no-repeat padding-box",
+                        background: "#DCF6E4",
+                        height: "110px",
                       }}
                     >
-                      <div className="player-image">
+                      <div
+                        className={
+                          this.state.playerTurn === "Red"
+                            ? "activeplayer "
+                            : "player-image"
+                        }
+                      >
                         <div
-                          className={
-                            this.state.playerTurn === "Red"
-                              ? "player-image activeplayer"
-                              : "player-image"
-                          }
-                          // this.state.playerTurn === "Red"
-                          // ? "player-image activeplayer"
-                          // : "player-image"
-                          style={{
-                            borderColor: "#FFA200",
-                            width: "80px",
-                            height: "80px",
-                            margin: "0% 0%",
-                          }}
+
+                        // style={{
+                        //   borderColor: "#FFA200",
+                        //   width: "80px",
+                        //   height: "80px",
+                        //   margin: "0% 0%",
+                        // }}
                         >
                           <img
                             src="http://localhost:3000/img/boy.png"
                             alt="Avatar"
-                            style={{ marginLeft: "7px", height: "100%" }}
+                            style={{ marginLeft: "6px", height: "100%" }}
                           ></img>
                         </div>
                       </div>
                       <div style={{ width: "45%", padding: "15px 20px" }}>
-                        <p>Player 01</p>
-                        <p style={{ marginBottom: "0px" }}>
+                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                          Player 01
+                        </p>
+                        <p
+                          style={{
+                            marginBottom: "0px",
+                            fontWeight: "500",
+                            fontSize: "20px",
+                          }}
+                        >
                           {this.props.data.player1}
                         </p>
                       </div>
@@ -410,7 +440,9 @@ class Board extends Component {
                         className="text-center"
                         style={{ padding: "15px 20px" }}
                       >
-                        <p>Score</p>
+                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                          Score
+                        </p>
                         <p style={{ marginBottom: "0px" }}>{this.state.p1}</p>
                       </div>
                     </div>
@@ -419,33 +451,46 @@ class Board extends Component {
                       class="gamecards flex-container"
                       style={{
                         display: "flex",
-                        background: "#F6EFD5 0% 0% no-repeat padding-box",
+                        background: "#F6EFD5",
                       }}
                     >
-                      <div>
+                      <div
+                        className={
+                          this.state.playerTurn === "Blue"
+                            ? "activeplayer"
+                            : "player-image"
+                        }
+                      >
                         <div
-                          className={
-                            this.state.playerTurn === "Blue"
-                              ? "player-image activeplayer"
-                              : "player-image"
-                          }
-                          style={{
-                            borderColor: "#F8D146",
-                            width: "80px",
-                            height: "80px",
-                            margin: "8% 6%",
-                          }}
+                        // style={{
+                        //   borderColor: "#F8D146",
+                        //   width: "80px",
+                        //   height: "80px",
+                        //   margin: "20% 6%",
+                        // }}
                         >
                           <img
                             src="http://localhost:3000/img/girl.png"
                             alt="Avatar"
-                            style={{ marginLeft: "5px", height: "100%" }}
+                            style={{
+                              marginLeft: "1px",
+                              height: "100%",
+                              marginTop: "2px",
+                            }}
                           ></img>
                         </div>
                       </div>
                       <div style={{ width: "45%", padding: "15px 20px" }}>
-                        <p>Player 01</p>
-                        <p style={{ marginBottom: "0px" }}>
+                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                          Player 02
+                        </p>
+                        <p
+                          style={{
+                            marginBottom: "0px",
+                            fontWeight: "500",
+                            fontSize: "20px",
+                          }}
+                        >
                           {this.props.data.player2}
                         </p>
                       </div>
@@ -453,7 +498,9 @@ class Board extends Component {
                         className="text-center"
                         style={{ padding: "15px 20px" }}
                       >
-                        <p>Score</p>
+                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                          Score
+                        </p>
                         <p style={{ marginBottom: "0px" }}>{this.state.p2}</p>
                       </div>
                     </div>
@@ -465,6 +512,7 @@ class Board extends Component {
                           type="button"
                           className="bordButton undo"
                           onClick={this.resetGame}
+                          style={{ fontWeight: 600, fontSize: "20px" }}
                         >
                           {this.state.winner === ""
                             ? "Undo Step"
@@ -480,6 +528,7 @@ class Board extends Component {
                           type="button"
                           className="bordButton end"
                           onClick={this.resetUser}
+                          style={{ fontWeight: 600, fontSize: "20px" }}
                         >
                           End Tournament
                         </button>

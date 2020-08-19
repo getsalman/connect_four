@@ -8,10 +8,9 @@ const TwoPlayers = (props) => {
   const [name, setName] = useState("whoStarts");
 
   const onChange = (e) => {
-    console.log("===========--===========", e.target);
+    console.log("==================>", e.target);
     const name = `${e.target.name}`;
     const value = e.target.value;
-
     props.data[name] = value;
     props.setUser(props.data);
   };
@@ -47,7 +46,7 @@ const TwoPlayers = (props) => {
                 style={{
                   width: "50px",
                   height: "55px",
-                  margin: "5px 0px 0px 7px",
+                  margin: "5px 0px 0px 5px",
                 }}
               />
             </div>
@@ -57,9 +56,17 @@ const TwoPlayers = (props) => {
                 borderBottom: "1px solid #70707026",
                 marginLeft: "-30px",
                 width: "100%",
+                marginBottom: "10px",
               }}
             >
-              <p style={{ marginBottom: "0rem", color: "#424242" }}>
+              <p
+                style={{
+                  marginBottom: "0rem",
+                  color: "#424242",
+                  fontWeight: "400",
+                  fontSize: "15px",
+                }}
+              >
                 Player 01
               </p>
 
@@ -103,9 +110,17 @@ const TwoPlayers = (props) => {
                 borderBottom: "1px solid #70707026",
                 marginLeft: "-30px",
                 width: "100%",
+                marginBottom: "10px",
               }}
             >
-              <p style={{ marginBottom: "0rem", color: "#424242" }}>
+              <p
+                style={{
+                  marginBottom: "0rem",
+                  color: "#424242",
+                  fontWeight: "400",
+                  fontSize: "15px",
+                }}
+              >
                 Player 02
               </p>
 
@@ -141,9 +156,9 @@ const TwoPlayers = (props) => {
                 src="http://localhost:3000/img/cup.png"
                 alt="Avatar"
                 style={{
-                  width: "50px",
-                  height: "55px",
-                  margin: "5px 0px 0px 7px",
+                  width: "45px",
+                  height: "45px",
+                  margin: "10px 0px 0px 7px",
                 }}
               />
             </div>
@@ -153,18 +168,22 @@ const TwoPlayers = (props) => {
                 borderBottom: "1px solid #70707026",
                 marginLeft: "-30px",
                 width: "100%",
+                marginBottom: "10px",
               }}
             >
               <p
                 style={{
                   marginBottom: "0rem",
                   color: "#424242",
-                  fontSize: "18px",
+                  fontWeight: "400",
+                  fontSize: "15px",
                 }}
               >
                 Number of game
               </p>
-              <div style={{ fontSize: "25px" }}>{props.data.numberOfGames}</div>
+              <div style={{ fontSize: "20px", fontWeight: "500" }}>
+                {props.data.numberOfGames}
+              </div>
             </div>
           </div>
 
@@ -191,7 +210,7 @@ const TwoPlayers = (props) => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  margin: "8px 0px 0px 7px",
+                  margin: "4px 0px 0px 4px",
                 }}
               ></img>
             </div>
@@ -201,18 +220,22 @@ const TwoPlayers = (props) => {
                 borderBottom: "1px solid #70707026",
                 marginLeft: "-30px",
                 width: "100%",
+                marginBottom: "10px",
               }}
             >
               <p
                 style={{
                   marginBottom: "0rem",
                   color: "#424242",
-                  fontSize: "18px",
+                  fontWeight: "400",
+                  fontSize: "15px",
                 }}
               >
                 Who starts
               </p>
-              <div style={{ fontSize: "25px" }}>{props.data.whoStarts}</div>
+              <div style={{ fontSize: "20px", fontWeight: "500" }}>
+                {props.data.whoStarts}
+              </div>
             </div>
           </div>
           <hr style={{ width: "100%" }}></hr>

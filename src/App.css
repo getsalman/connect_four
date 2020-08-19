@@ -115,13 +115,6 @@ body {
   border-radius: 50%;
   transform: translateY(400px);
 }
-/* .image {
-  position: relative;
-width: 60px;
-height: 60px;
-border-radius: 53px;
-  border-radius: 50px;
-} */
 
 .Blue {
   background-color: #2cc5ff;
@@ -180,20 +173,19 @@ border-radius: 53px;
 .connect-four {
   margin-top: 2%;
   text-align: center;
-  font-size: 1rem;
+
   letter-spacing: 0px;
   color: #3d4276;
   text-transform: uppercase;
-  margin-left: -30%;
+  margin-left: -310px;
 }
 .connect-four-text {
   text-align: center;
   font-family: sans-serif;
-  font-size: 14px;
+
   letter-spacing: 0px;
   color: #949494;
-  opacity: 1;
-  margin-left: -30%;
+  margin-left: -337px;
 }
 
 .playbutton {
@@ -288,10 +280,11 @@ border-radius: 53px;
 }
 
 .custom-game-text {
-  font-size: 18px;
+  font-size: 15px;
   color: #ffffff;
   margin-left: -25px;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-weight: 600;
 }
 
 .card {
@@ -302,6 +295,7 @@ border-radius: 53px;
   border-radius: 20px;
   padding: 2%;
   box-shadow: 0px 3px 10px #00000029;
+  margin-bottom: 15px;
 }
 
 .card-2 {
@@ -311,18 +305,8 @@ border-radius: 53px;
   border-radius: 20px;
   padding-bottom: 50px;
   background-color: #eeeeee;
+  padding-bottom: 25px;
 }
-
-/* .gamecard {
-  display: grid;
-  margin: 25px 0px 0px 310px;
-  width: 47%;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 10px #00000029;
-  border: 1px solid #f7f7f7;
-  border-radius: 15px;
-} */
 
 .boardgame {
   margin: 150px 0px 80px -90px;
@@ -397,16 +381,6 @@ border-radius: 53px;
   display: grid;
 }
 
-/* .numbers-of-games {
-  margin: 45px 0px -52px 2px;
-  width: 95%;
-
-  background: #dcf6e4 0% 0% no-repeat padding-box;
-  border: 1px solid #70707026;
-  border-radius: 10px;
-  display: grid;
-} */
-
 .whostart {
   margin: 45px 0px -52px 2px;
   width: 95%;
@@ -415,19 +389,6 @@ border-radius: 53px;
   border: 1px solid #70707026;
   border-radius: 10px;
   display: grid;
-}
-
-.boardlabel {
-  margin: 10px 0px 0px 30px;
-  width: 30%;
-  height: 60px;
-  background: #dcf6e4 0% 0% no-repeat padding-box;
-  border: 1px solid #70707026;
-  border-radius: 15px;
-  opacity: 1;
-  display: grid;
-
-  padding: 10px;
 }
 
 .boy-circle {
@@ -449,7 +410,9 @@ border-radius: 53px;
 }
 
 .player-input {
-  font-size: 24px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
   font-family: fantasy;
   letter-spacing: 1px;
   background-color: transparent;
@@ -473,18 +436,26 @@ border-radius: 53px;
 }
 
 .submit {
-  margin: 15px 0px 10px 20px;
-  width: 90%;
+  width: 100%;
   height: 60px;
   color: white;
-  font-size: 20px;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background: #4b7bff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #70707026;
   border-radius: 15px;
-  opacity: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.aaaaanumber {
+  font-weight: 600;
+  font: normal normal medium 36px/55px Poppins;
+  letter-spacing: 0px;
+  color: #424242;
+  font-size: 23px;
 }
 
 .header {
@@ -521,6 +492,14 @@ border-radius: 53px;
   opacity: 1;
 }
 
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
 hr {
   margin: 20px 20px 10px 0px;
   width: 290px;
@@ -541,11 +520,13 @@ h1 {
   text-align: left;
 }
 .activeplayer {
-  margin-top: -8px;
-  width: 60px;
-  height: 51px;
+  border: 10px solid orange;
   border-radius: 50%;
-  border-color: orange;
+  margin-left: 6px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  width: 90px;
+  height: 90px;
 }
 
 .modal {
@@ -562,50 +543,24 @@ h1 {
   position: absolute;
   background: #ffffff;
   height: 500px;
-  top: 50%;
+  top: 55%;
   left: 50%;
   border-radius: 20px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #f7f7f7;
-
   opacity: 1;
 }
 
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  margin-left: -100px;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
 .input-box {
-  margin-top: 30px;
+  /* margin-top: 30px;
   margin-left: 31px;
   width: 324px;
-  height: 50px;
+  height: 50px; */
   background: #eff3ff 0% 0% no-repeat padding-box;
   border: 1px solid #70707026;
   border-radius: 15px;
+  margin: 10px 45px 0px 45px;
 }
 
 .radio-button {
@@ -621,12 +576,12 @@ h1 {
 .ok-background {
   width: 180px;
   height: 60px;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   background: #4b7bff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #70707026;
   border-radius: 20px;
   opacity: 1;
+  margin-right: 20px;
 }
 .cancel-background {
   width: 180px;
@@ -665,13 +620,63 @@ h1 {
 }
 
 .player-image {
-  background: rgb(234, 240, 236) 0% 0% no-repeat padding-box;
   border: 10px solid #37ac5d;
-  border-radius: 60%;
-  width: 40%;
+  border-radius: 50%;
   margin-left: 6px;
-  margin-top: 7px;
-  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  width: 90px;
+  height: 90px;
+}
+
+/* Hide the browser's default radio button */
+/* .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+} */
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  margin-left: -100px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 /*page 3 css latest*/
@@ -743,12 +748,27 @@ h1 {
     margin: 10px 0px;
   }
   .Hole {
-    width: 45px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .smallpad {
+    padding: 15px 25px 25px 25px;
+  }
+
+  .aaaaanumber {
+    text-align: center;
   }
 
   .game {
-    padding: 141px 14px;
+    /* padding: 141px 14px; */
+  }
+
+  .gamecards {
+    border: 1px solid #70707026;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    min-height: 110px;
   }
   .coming-soon-img {
     margin: 5% 8%;
@@ -766,6 +786,19 @@ h1 {
     margin-bottom: 10px;
     width: 130%;
     margin-left: -31px;
+  }
+}
+
+/* land scape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .boardcard {
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f7f7f7;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin: 50px 0px 0px 0px;
   }
 }
 
@@ -877,8 +910,8 @@ h1 {
     width: 350px;
     height: 570px;
   }
-
-  /* .player1 {
+  /* 
+  .player1 {
     margin: 40px 10px -35px 53px;
     width: 65%;
     height: 62px;
@@ -903,8 +936,8 @@ h1 {
   }
 
   .submit {
-    margin: 25px 0px 10px 35px;
-    width: 285px;
+    margin: 0px;
+    width: 100%;
     height: 60px;
   }
 
@@ -985,20 +1018,8 @@ h1 {
     font-variant-position: center;
   }
 
-  .boardlabel {
-    margin: 10px 0px 0px 30px;
-    width: 77%;
-    height: 68px;
-    background: #dcf6e4 0% 0% no-repeat padding-box;
-    border: 1px solid #70707026;
-    border-radius: 15px;
-    opacity: 1;
-    display: grid;
-    padding: 10px;
-  }
-
   .boardcard {
-    margin: 0px;
+    margin: 20px 0px;
   }
 
   .Slat {
@@ -1068,7 +1089,8 @@ h1 {
   .carddd {
     background-color: #ffffff;
     margin: 0% 0%;
-    padding: 2% 7%;
+    margin-top: 0%;
+    padding: 7% 7%;
     margin-top: 4%;
     border-radius: 15px;
     box-shadow: 0px 3px 6px #00000029;

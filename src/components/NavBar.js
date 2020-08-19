@@ -1,23 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './NavBar.css'
 
-const NavBar = (props) => {
+const NavBar = props => {
   return (
     <nav>
       <ul>
         <Link to={props.page}>
-          <div className="arrow">
-            <img
-              className="back-button-img"
-              src="http://localhost:3000/img/back-arrow.png"
-            />
-          </div>
+          <i
+            class='fa fa-arrow-left'
+            aria-hidden='true'
+            style={{ color: '#424242', marginTop: '25px' }}
+          ></i>
         </Link>
         <li>Two Player Games</li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
