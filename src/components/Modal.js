@@ -48,7 +48,11 @@ const Modal = ({ handleClose, show, name, onChange, data }) => {
               <button
                 type="button"
                 className="cancel-background"
-                style={{ color: "#4B7BFF" }}
+                style={{
+                  color: "#4B7BFF",
+                  fontWeight: "600",
+                  fontSize: "15px",
+                }}
               >
                 CANCEL
               </button>
@@ -59,7 +63,7 @@ const Modal = ({ handleClose, show, name, onChange, data }) => {
               type="button"
               className="ok-background"
               onClick={handleClose}
-              style={{ color: "#FFFFFF" }}
+              style={{ color: "#FFFFFF", fontWeight: "600", fontSize: "15px" }}
             >
               OK
             </button>
