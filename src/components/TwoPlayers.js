@@ -41,7 +41,7 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
-                src="http://localhost:3000/img/boy.png"
+                src="/img/boy.png"
                 alt="Avatar"
                 style={{
                   width: "50px",
@@ -95,7 +95,7 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
-                src="http://localhost:3000/img/girl.png"
+                src="/img/girl.png"
                 alt="Avatar"
                 style={{
                   width: "50px",
@@ -154,7 +154,7 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
-                src="http://localhost:3000/img/cup.png"
+                src="/img/cup.png"
                 alt="Avatar"
                 style={{
                   width: "45px",
@@ -207,7 +207,7 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
-                src="http://localhost:3000/img/tour.png"
+                src="/img/tour.png"
                 alt="Avatar"
                 style={{
                   width: "50px",

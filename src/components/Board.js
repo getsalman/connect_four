@@ -295,7 +295,7 @@ class Board extends Component {
                         >
                           <div className="activeplayer">
                             <img
-                              src="http://localhost:3000/img/boy.png"
+                              src="/img/boy.png"
                               alt="Avatar"
                               style={{ marginLeft: "8px", height: "100%" }}
                             ></img>
@@ -362,7 +362,7 @@ class Board extends Component {
                         >
                           <div className="activeplayer2">
                             <img
-                              src="http://localhost:3000/img/girl.png"
+                              src="/img/girl.png"
                               alt="Avatar"
                               style={{
                                 marginLeft: "4px",
