@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import Slat from "./Slat";
 import NavBar from "./NavBar";
@@ -212,9 +212,8 @@ class Board extends Component {
     ));
 
     return (
-      <div>
+      <Fragment>
         <NavBar page={"/2player"} />
-
         {this.state.gameSelected && (
           <div className="container">
             <div className="boardcard">
@@ -427,7 +426,7 @@ class Board extends Component {
             </div>
           </div>
         )}
-      </div>
+      </Fragment>
     );
   }
 }
