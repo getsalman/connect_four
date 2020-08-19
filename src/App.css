@@ -14,6 +14,17 @@ body {
   color: white;
   font-size: 28px;
 }
+.startbtn {
+  border: none;
+  background-color: #4b7bff;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #70707026;
+  border-radius: 20px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 28px;
+}
 
 .carddd {
   background-color: #ffffff;
@@ -91,8 +102,8 @@ body {
   margin: 4px;
   margin-top: 5px;
   margin-bottom: 5px;
-  min-width: 50px;
-  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 30px;
   border: 0px solid rgb(24, 149, 190);
   background: rgb(255, 255, 255);
@@ -106,7 +117,7 @@ body {
   min-height: 50px;
   border-radius: 50px;
 
-  top: -400px;
+  top: -402px;
   transition: transform 0.2s;
 }
 
@@ -309,7 +320,7 @@ body {
 }
 
 .boardgame {
-  margin: 150px 0px 80px -90px;
+  /* margin: 150px 0px 80px -90px; */
   width: 900px;
   height: 580px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -341,7 +352,7 @@ body {
 }
 .item5 {
   border-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 .item6 {
@@ -349,14 +360,14 @@ body {
   grid-column: 3 / span 1;
   /* background: #DCF6E4 0% 0% no-repeat padding-box; */
   border-style: none;
-  text-align: left;
+  text-align: center;
 }
 .item7 {
   grid-row: 2 / span 1;
   grid-column: 3 / span 1;
   /* background: #DCF6E4 0% 0% no-repeat padding-box; */
   border-style: none;
-  text-align: left;
+  text-align: center;
 }
 
 .playerLabel {
@@ -520,13 +531,18 @@ h1 {
   text-align: left;
 }
 .activeplayer {
-  border: 10px solid orange;
+  border: 10px solid #37ac5d;
   border-radius: 50%;
-  margin-left: 6px;
-  margin-top: 6px;
-  margin-bottom: 2px;
   width: 90px;
   height: 90px;
+  margin: auto;
+}
+.activeplayer2 {
+  border: 10px solid #f8d146;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: auto;
 }
 
 .modal {
@@ -699,7 +715,6 @@ h1 {
   border-radius: 30px;
   background-color: #ffffff;
   box-shadow: 0px 3px 6px #00000029;
-  min-height: 100%;
   padding: 72px 32px;
 }
 
@@ -723,6 +738,7 @@ h1 {
   background: rgb(255, 255, 255);
   width: 70px;
   height: 70px;
+  border: 2px solid #ffffff;
 }
 
 .image {
@@ -742,7 +758,7 @@ h1 {
 }
 
 .smallpad {
-  padding: 25px 25px 0px 0px;
+  padding: 25px 25px 25px 0px;
 }
 
 /* Tablet */
@@ -762,10 +778,6 @@ h1 {
 
   .aaaaanumber {
     text-align: center;
-  }
-
-  .game {
-    /* padding: 141px 14px; */
   }
 
   .gamecards {
@@ -791,6 +803,11 @@ h1 {
     width: 130%;
     margin-left: -31px;
   }
+
+  .Hole div {
+    top: -393px;
+    left: 6px;
+  }
 }
 
 /* land scape */
@@ -803,6 +820,11 @@ h1 {
     border-radius: 30px;
     margin-top: 40px;
     margin: 50px 0px 0px 0px;
+  }
+
+  .Hole div {
+    top: -398px;
+    left: 2px;
   }
 }
 
@@ -930,7 +952,6 @@ h1 {
   .player-input {
     height: 20px;
     width: 110px;
-    text-align: center;
     font-size: 15px;
   }
 
@@ -1040,15 +1061,24 @@ h1 {
     width: 42px;
     height: 42px;
     border-radius: 50px;
-    top: -400px;
+    top: -398px;
     transition: transform 0.2s;
     min-width: 42px;
     min-height: 42px;
+    left: 0px;
   }
   .Hole img {
     height: 38px;
     width: 38px;
     margin-left: 3px;
+  }
+  .Hole div {
+    min-width: 38px;
+    min-height: 38px;
+  }
+  .Hole img {
+    height: 38px;
+    width: 38px;
   }
 
   .hrr {
@@ -1104,4 +1134,17 @@ h1 {
   .coming-soon-img {
     margin: 16% -8%;
   }
+}
+
+.activeatedcircle {
+  border: 10px solid #ffa200;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: block;
+  margin: auto;
+}
+.inactivecircle {
+  display: nn;
+  padding: 8% 0%;
 }

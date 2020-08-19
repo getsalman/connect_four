@@ -276,34 +276,40 @@ class Board extends Component {
                       style={{
                         display: "flex",
                         background: "#DCF6E4",
-                        height: "110px",
+                        minHeight: "110px",
                       }}
                     >
                       <div
-                        className={
-                          this.state.playerTurn === "Red"
-                            ? "activeplayer "
-                            : "player-image"
-                        }
+                        style={{
+                          width: "180px",
+                          height: "120px",
+                          padding: "2% 0%",
+                        }}
                       >
                         <div
-
-                        // style={{
-                        //   borderColor: "#FFA200",
-                        //   width: "80px",
-                        //   height: "80px",
-                        //   margin: "0% 0%",
-                        // }}
+                          className={
+                            this.state.playerTurn === "Red"
+                              ? "activeatedcircle"
+                              : "inactivecircle"
+                          }
                         >
-                          <img
-                            src="http://localhost:3000/img/boy.png"
-                            alt="Avatar"
-                            style={{ marginLeft: "6px", height: "100%" }}
-                          ></img>
+                          <div className="activeplayer">
+                            <img
+                              src="http://localhost:3000/img/boy.png"
+                              alt="Avatar"
+                              style={{ marginLeft: "8px", height: "100%" }}
+                            ></img>
+                          </div>
                         </div>
                       </div>
-                      <div style={{ width: "45%", padding: "15px 20px" }}>
-                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                      <div style={{ width: "45%", padding: "15px 10px" }}>
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            color: "#424242",
+                          }}
+                        >
                           Player 01
                         </p>
                         <p
@@ -318,9 +324,15 @@ class Board extends Component {
                       </div>
                       <div
                         className="text-center"
-                        style={{ padding: "15px 20px" }}
+                        style={{ padding: "15px 15px" }}
                       >
-                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            color: "#424242",
+                          }}
+                        >
                           Score
                         </p>
                         <p style={{ marginBottom: "0px" }}>{this.state.p1}</p>
@@ -335,33 +347,40 @@ class Board extends Component {
                       }}
                     >
                       <div
-                        className={
-                          this.state.playerTurn === "Blue"
-                            ? "activeplayer"
-                            : "player-image"
-                        }
+                        style={{
+                          width: "180px",
+                          height: "120px",
+                          padding: "2% 0%",
+                        }}
                       >
                         <div
-                        // style={{
-                        //   borderColor: "#F8D146",
-                        //   width: "80px",
-                        //   height: "80px",
-                        //   margin: "20% 6%",
-                        // }}
+                          className={
+                            this.state.playerTurn === "Blue"
+                              ? "activeatedcircle"
+                              : "inactivecircle"
+                          }
                         >
-                          <img
-                            src="http://localhost:3000/img/girl.png"
-                            alt="Avatar"
-                            style={{
-                              marginLeft: "1px",
-                              height: "100%",
-                              marginTop: "2px",
-                            }}
-                          ></img>
+                          <div className="activeplayer2">
+                            <img
+                              src="http://localhost:3000/img/girl.png"
+                              alt="Avatar"
+                              style={{
+                                marginLeft: "4px",
+                                height: "100%",
+                                marginTop: "2px",
+                              }}
+                            ></img>
+                          </div>
                         </div>
                       </div>
-                      <div style={{ width: "45%", padding: "15px 20px" }}>
-                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                      <div style={{ width: "45%", padding: "15px 10px" }}>
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            color: "#424242",
+                          }}
+                        >
                           Player 02
                         </p>
                         <p
@@ -376,9 +395,15 @@ class Board extends Component {
                       </div>
                       <div
                         className="text-center"
-                        style={{ padding: "15px 20px" }}
+                        style={{ padding: "15px 15px" }}
                       >
-                        <p style={{ fontWeight: "500", fontSize: "10px" }}>
+                        <p
+                          style={{
+                            fontWeight: "500",
+                            fontSize: "14px",
+                            color: "#424242",
+                          }}
+                        >
                           Score
                         </p>
                         <p style={{ marginBottom: "0px" }}>{this.state.p2}</p>
