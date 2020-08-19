@@ -142,6 +142,7 @@ const TwoPlayers = (props) => {
               marginBottom: "10px",
               backgroundColor: "#EFF3FF",
               borderColor: "1px solid #70707026",
+              cursor: "pointer",
             }}
             onClick={() => {
               setShow(!show);
@@ -194,6 +195,7 @@ const TwoPlayers = (props) => {
               marginBottom: "10px",
               backgroundColor: "#EFF3FF",
               borderColor: "1px solid #70707026",
+              cursor: "pointer",
             }}
             onClick={() => {
               setShow(!show);
