@@ -323,7 +323,6 @@ body {
 }
 
 .boardgame {
-  /* margin: 150px 0px 80px -90px; */
   width: 900px;
   height: 580px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
