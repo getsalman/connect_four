@@ -838,7 +838,7 @@ h1 {
 
 /* Mobile */
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .smallpad {
     padding: 25px 10px 0px 10px;
   }
