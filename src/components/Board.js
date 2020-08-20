@@ -412,6 +412,7 @@ class Board extends Component {
                       <div>
                         <button
                           type="button"
+                          className="end-tournament"
                           className="bordButton end"
                           onClick={this.resetUser}
                           style={{ fontWeight: 600, fontSize: "20px" }}

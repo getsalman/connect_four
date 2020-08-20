@@ -594,6 +594,18 @@ h1 {
   font-weight: 400;
   font-size: 17px;
 }
+
+.two-player-img {
+  width: 50px;
+  height: 55px;
+  margin: 5px 0px 0px 5px;
+}
+
+.two-player-cup {
+  width: 45px;
+  height: 45px;
+  margin: 10px 0px 0px 7px;
+}
 .ok-background {
   width: 180px;
   height: 60px;
@@ -1157,5 +1169,17 @@ h1 {
   .inactivecircle {
     display: nn;
     padding: 8% 0%;
+  }
+
+  .two-player-img {
+    width: 50px;
+    height: 55px;
+    margin: 4px 0px 0px 3px;
+  }
+
+  .two-player-cup {
+    width: 45px;
+    height: 45px;
+    margin: 10px 0px 0px 6px;
   }
 }

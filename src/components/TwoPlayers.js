@@ -39,15 +39,7 @@ const TwoPlayers = (props) => {
               className="boy-circle"
               style={{ height: "80px", width: "90px" }}
             >
-              <img
-                src="/img/boy.png"
-                alt="Avatar"
-                style={{
-                  width: "50px",
-                  height: "55px",
-                  margin: "5px 0px 0px 5px",
-                }}
-              />
+              <img className="two-player-img" src="/img/boy.png" alt="Avatar" />
             </div>
             <div
               style={{
@@ -94,13 +86,9 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
+                className="two-player-img"
                 src="/img/girl.png"
                 alt="Avatar"
-                style={{
-                  width: "50px",
-                  height: "55px",
-                  margin: "5px 0px 0px 7px",
-                }}
               />
             </div>
             <div
@@ -152,15 +140,7 @@ const TwoPlayers = (props) => {
               className="cup-circle"
               style={{ height: "80px", width: "90px" }}
             >
-              <img
-                src="/img/cup.png"
-                alt="Avatar"
-                style={{
-                  width: "45px",
-                  height: "45px",
-                  margin: "10px 0px 0px 7px",
-                }}
-              />
+              <img className="two-player-cup" src="/img/cup.png" alt="Avatar" />
             </div>
             <div
               style={{
@@ -206,13 +186,9 @@ const TwoPlayers = (props) => {
               style={{ height: "80px", width: "90px" }}
             >
               <img
+                className="two-player-cup"
                 src="/img/tour.png"
                 alt="Avatar"
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  margin: "4px 0px 0px 4px",
-                }}
               ></img>
             </div>
             <div
