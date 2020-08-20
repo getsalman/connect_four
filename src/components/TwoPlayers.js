@@ -228,5 +228,4 @@ const TwoPlayers = (props) => {
     </div>
   );
 };
-
 export default TwoPlayers;
