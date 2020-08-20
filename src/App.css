@@ -348,7 +348,7 @@ body {
 .item4 {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1;
-  /* background: #DCF6E4 0% 0% no-repeat padding-box; */
+
   border-style: none;
   text-align: left;
 }
