@@ -236,7 +236,7 @@ body {
 }
 
 .custom-game {
-  margin: 60px 0px 0px 40px;
+  /* margin: 60px 0px 0px 40px; */
   width: 230px;
   height: 60px;
   background: #4babff 0% 0% no-repeat padding-box;
@@ -244,6 +244,7 @@ body {
   opacity: 1;
   text-align: center;
   border: 0px;
+  margin-left: 45px;
 }
 .two-players-game {
   margin: 20px 0px 0px 20px;
@@ -257,7 +258,7 @@ body {
 }
 
 .online-game {
-  margin: 20px 0px 0px 40px;
+  /* margin: 20px 0px 0px 40px; */
   width: 230px;
   height: 60px;
   background: #4b4bff 0% 0% no-repeat padding-box;
@@ -265,6 +266,7 @@ body {
   opacity: 1;
   text-align: center;
   border: 0px;
+  margin-left: 45px;
 }
 
 .training-game {
@@ -831,13 +833,13 @@ h1 {
 
 /* Mobile */
 
-@media (max-width: 390px) {
+@media (max-width: 375px) {
   .smallpad {
     padding: 25px 10px 0px 10px;
   }
 
   .card {
-    margin: 0px 0px 0px -8px;
+    margin: 0px 0px 0px -7px;
     width: 360px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -858,7 +860,7 @@ h1 {
     padding-top: 0%;
     box-shadow: 0px 3px 10px #00000029;
     height: 589px;
-    margin-left: 13px;
+    margin-left: -10px;
   }
   .home-image {
     margin: -78px 0px 0px 130px;
@@ -889,8 +891,9 @@ h1 {
     z-index: 1;
     position: absolute;
     float: left;
-    top: 172px;
-    left: -239px;
+    top: 326px;
+    left: -100px;
+    border: 30px solid #e6ffe9;
   }
 
   .custom-game {
@@ -1056,6 +1059,16 @@ h1 {
     margin: 0px 0px 0px 0px;
   }
 
+  .Slat {
+    background: #84a4fc;
+    border-radius: 50px;
+
+    background: #84a4fc;
+    border-radius: 50px;
+    opacity: 1;
+    width: 100%;
+  }
+
   .bordButton {
     width: 100%;
     margin-bottom: 10px;
@@ -1106,7 +1119,7 @@ h1 {
   }
   .Hole {
     padding: -3px;
-    margin: 1px;
+    margin: 0px;
     max-width: 45px;
     max-height: 45px;
     min-width: 0px;
@@ -1130,7 +1143,7 @@ h1 {
     margin: 0% 0%;
     margin-top: 0%;
     padding: 7% 7%;
-    margin-top: 12%;
+    margin-top: 8%;
     border-radius: 15px;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #f7f7f7;
@@ -1139,17 +1152,17 @@ h1 {
   .coming-soon-img {
     margin: 16% -8%;
   }
-}
 
-.activeatedcircle {
-  border: 10px solid #ffa200;
-  border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  display: block;
-  margin: auto;
-}
-.inactivecircle {
-  display: nn;
-  padding: 8% 0%;
+  .activeatedcircle {
+    border: 10px solid #ffa200;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: auto;
+  }
+  .inactivecircle {
+    display: nn;
+    padding: 8% 0%;
+  }
 }
