@@ -20,7 +20,7 @@ nav ul li {
   padding: 1rem;
   flex: auto;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 65px;
   letter-spacing: 0px;
   color: #424242;
@@ -34,7 +34,6 @@ nav ul li {
   float: left;
   width: 35px;
   height: 24px;
-  opacity: 1;
 }
 
 @media all and (max-width: 375px) and (min-width: 0px) {

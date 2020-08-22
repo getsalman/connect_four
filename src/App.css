@@ -1,6 +1,6 @@
 body {
   background-color: #ced2dc;
-  font-family: 'Poppins', Bold sans-serif;
+  font-family: "Poppins", Bold sans-serif;
   overflow-x: hidden;
 }
 
@@ -287,7 +287,7 @@ body {
 }
 
 .custom-game-image {
-  background-image: url('./img/user.png');
+  background-image: url("./img/user.png");
   background-position: left;
   background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -453,8 +453,8 @@ body {
   height: 60px;
   color: white;
 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background: #4b7bff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #70707026;
@@ -696,7 +696,7 @@ h1 {
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
 }
@@ -716,7 +716,7 @@ h1 {
   background: white;
 }
 
-/*page 3 css latest*/
+/*page 3 cssss latest*/
 .boardcard {
   background: #f5f5f5 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;

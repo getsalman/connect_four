@@ -17,7 +17,7 @@ class Board extends Component {
       lastTurn: "",
       p1: 0,
       p2: 0,
-      count: 0,
+
       totalGame: parseInt(
         this.props.data.numberOfGames.slice(
           0,
