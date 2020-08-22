@@ -219,11 +219,13 @@ class Board extends Component {
             <div className="boardcard">
               <div className="row">
                 <div className="col-lg-8 col-sm-12 col-xs-12">
-                  <div className="game ">{slats}</div>
+                  <div>
+                    <div className="game">{slats}</div>
+                  </div>
                 </div>
                 <div className="col-lg-4 col-sm-12 col-xs-12">
                   <div className="smallpad">
-                    <h2 className="aaaaanumber">
+                    <h2 className="number-of-games">
                       {this.props.data.numberOfGames} Tournament
                     </h2>
 
@@ -249,7 +251,7 @@ class Board extends Component {
                         marginTop: "-40px",
                       }}
                     >
-                      Playing Game: {this.increment}
+                      Playing Game:{" "}
                     </p> */}
 
                     <div

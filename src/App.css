@@ -123,13 +123,13 @@ body {
 }
 
 .Red {
-  background-color: #ff456c;
+  background-color: #dcf6e4;
   border-radius: 50%;
   transform: translateY(400px);
 }
 
 .Blue {
-  background-color: #2cc5ff;
+  background-color: #f6efd5;
   border-radius: 50%;
   transform: translateY(400px);
 }
@@ -463,12 +463,14 @@ body {
   font-size: 18px;
 }
 
-.aaaaanumber {
+.number-of-games {
   font-weight: 600;
   font: normal normal medium 36px/55px Poppins;
   letter-spacing: 0px;
   color: #424242;
   font-size: 23px;
+  margin-bottom: -20px;
+  margin-left: 20px;
 }
 
 .header {
@@ -545,6 +547,15 @@ h1 {
   width: 90px;
   height: 90px;
   margin: auto;
+}
+
+.activeplayer-play {
+  border: 8px solid #37ac5d;
+  margin: -4px 0px 0px -4px;
+}
+.activeplayer-play-2 {
+  border: 8px solid #f8d146;
+  margin: -4px 0px 0px -4px;
 }
 
 .modal {
@@ -749,18 +760,18 @@ h1 {
 
 .image {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 53px;
 }
 .Hole div {
   position: relative;
-  width: 62px;
-  height: 62px;
+  width: 66px;
+  height: 66px;
   border-radius: 50px;
-  top: -397px;
+  top: -398px;
   transition: transform 0.2s;
-  left: 3px;
+  left: 2px;
 }
 
 .smallpad {
@@ -782,7 +793,7 @@ h1 {
 
 /* Tablet */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .boardcard {
     margin: 10px 0px;
   }
@@ -795,8 +806,26 @@ h1 {
     padding: 15px 25px 25px 25px;
   }
 
-  .aaaaanumber {
+  .number-of-games {
     text-align: center;
+  }
+
+  .Hole div {
+    position: relative;
+    width: 76px;
+    height: 80px;
+    border-radius: 50px;
+    top: -397px;
+    transition: transform 0.2s;
+    left: 3px;
+    margin: -9px 0px 0px -3px;
+  }
+
+  .image {
+    position: relative;
+    width: 60px;
+    height: 63px;
+    border-radius: 50px;
   }
 
   .gamecards {
@@ -822,10 +851,9 @@ h1 {
     width: 130%;
     margin-left: -31px;
   }
-
   .Hole div {
-    top: -393px;
-    left: 6px;
+    top: -397px;
+    left: 3px;
   }
 }
 
@@ -1102,17 +1130,17 @@ h1 {
     left: 0px;
   }
   .Hole img {
-    height: 38px;
-    width: 38px;
-    margin-left: 3px;
+    height: 32px;
+    width: 32px;
+    margin-left: 0px;
   }
   .Hole div {
     min-width: 38px;
     min-height: 38px;
   }
   .Hole img {
-    height: 38px;
-    width: 38px;
+    height: 32px;
+    width: 32px;
   }
 
   .hrr {
@@ -1180,6 +1208,16 @@ h1 {
   .inactivecircle {
     display: nn;
     padding: 8% 0%;
+  }
+  .activeplayer-play {
+    border: 5px solid #37ac5d;
+  }
+  .activeplayer-play-2 {
+    border: 5px solid #f8d146;
+  }
+
+  .Hole div {
+    margin: -4px 0px 0px 0px;
   }
 
   .two-player-img {
