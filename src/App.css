@@ -309,7 +309,7 @@ body {
   border-radius: 20px;
   padding: 2%;
   box-shadow: 0px 3px 10px #00000029;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .card-2 {
@@ -317,9 +317,9 @@ body {
   width: 600px;
   background: rgb(255, 255, 255);
   border-radius: 20px;
-  padding-bottom: 50px;
+
   background-color: #eeeeee;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .boardgame {
