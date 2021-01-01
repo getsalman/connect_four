@@ -15,7 +15,6 @@ const App = () => {
   });
 
   const setUser = (user) => {
-    console.log("====================>User", user);
     setState({ ...state, user });
   };
 

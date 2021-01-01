@@ -30,11 +30,11 @@ nav ul li {
   font-size: 21px;
 }
 
-.arrow {
+/* .arrow {
   float: left;
   width: 35px;
   height: 24px;
-}
+} */
 
 @media all and (max-width: 375px) and (min-width: 0px) {
   nav ul {

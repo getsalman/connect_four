@@ -21,7 +21,7 @@ class Board extends Component {
       totalGame: parseInt(
         this.props.data.numberOfGames.slice(
           0,
-          this.props.data.numberOfGames.indexOf(" Games")
+          this.props.data.numberOfGames.indexOf("Games")
         )
       ),
     };
@@ -219,9 +219,7 @@ class Board extends Component {
             <div className="boardcard">
               <div className="row">
                 <div className="col-lg-8 col-sm-12 col-xs-12">
-                  <div>
-                    <div className="game">{slats}</div>
-                  </div>
+                  <div className="game">{slats}</div>
                 </div>
                 <div className="col-lg-4 col-sm-12 col-xs-12">
                   <div className="smallpad">
@@ -251,7 +249,7 @@ class Board extends Component {
                         marginTop: "-40px",
                       }}
                     >
-                      Playing Game:{" "}
+                      Playing Game:
                     </p> */}
 
                     <div

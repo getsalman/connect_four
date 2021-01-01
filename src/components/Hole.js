@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react'
 
-const Hole = (props) => {
+const Hole = props => {
   return (
-    <div className="Hole">
+    <div className='Hole'>
       <div className={props.value}>
         {props.value !== null ? (
-          props.value === "Red" ? (
-            <div className="Red activeplayer-play">
-              <img src="/img/boy.png" className="image"></img>
+          props.value === 'Red' ? (
+            <div className='Red activeplayer-play'>
+              <img src='/img/boy.png' className='image'></img>
             </div>
           ) : (
-            <div className="Blue activeplayer-play-2">
-              <img src="/img/girl.png" className="image"></img>
+            <div className='Blue activeplayer-play-2'>
+              <img src='/img/girl.png' className='image'></img>
             </div>
           )
         ) : (
-          ""
+          ''
         )}
       </div>
     </div>
-  );
-};
-export default Hole;
+  )
+}
+export default Hole
